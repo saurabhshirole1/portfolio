@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Saurabh Shirole | Data Analyst Portfolio</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<header class="header">
+  <div class="nav-container">
+    <h2 class="logo">Saurabh<span>.</span></h2>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#certificates">Certificates</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-container">
+
+    <div class="hero-content">
+      <h1>Hi, I'm <span id="name-typing"></span></h1>
+      <h3>Data Analyst | Data Science Enthusiast</h3>
+      <p><strong>Pune, Maharashtra</strong></p>
+
+      <p>
+        I analyze data, build machine learning models, and transform raw data
+        into actionable business insights.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#" class="btn primary" onclick="openPDF('resume/saurabh_shrirole_resume.pdf')">
+          View Resume
+        </a>
+        <a href="https://github.com/saurabhshirole1" target="_blank" class="btn secondary">GitHub</a>
+        <a href="https://linkedin.com/in/saurabhshirole1" target="_blank" class="btn linkedin">
+          <i class="fa-brands fa-linkedin"></i> LinkedIn
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-image">
+      <img src="images/profile.jpg" alt="Saurabh Shirole">
+    </div>
+
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section">
+  <h2 class="section-title">About Me</h2>
+  <p class="about-text">
+    Data Analyst with hands-on experience in Python, SQL, EDA, Power BI, and Machine Learning.
+  </p>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="section bg-light">
+  <h2 class="section-title">Skills</h2>
+  <div class="skills-grid">
+    <div class="skill-card"><h4>Programming</h4><p>Python, SQL</p></div>
+    <div class="skill-card"><h4>Data Analysis</h4><p>Pandas, NumPy, EDA</p></div>
+    <div class="skill-card"><h4>Visualization</h4><p>Matplotlib, Seaborn, Power BI</p></div>
+    <div class="skill-card"><h4>Machine Learning</h4><p>Regression, Classification</p></div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section">
+  <h2 class="section-title">Projects</h2>
+
+  <div class="projects-grid">
+    <div class="project-card">
+      <div class="project-image"><img src="images/projects/odi_eda.png"></div>
+      <h3>ODI Batting EDA</h3>
+      <p class="project-tools">Python, Pandas, NumPy</p>
+    </div>
+
+    <div class="project-card">
+      <div class="project-image"><img src="images/projects/energy_sql.png"></div>
+      <h3>World Energy SQL</h3>
+      <p class="project-tools">SQL</p>
+    </div>
+
+    <div class="project-card">
+      <div class="project-image"><img src="images/projects/churn_powerbi.png"></div>
+      <h3>Telecom Churn</h3>
+      <p class="project-tools">Power BI</p>
+    </div>
+
+    <div class="project-card">
+      <div class="project-image"><img src="images/projects/wine_ml.png"></div>
+      <h3>Wine Quality ML</h3>
+      <p class="project-tools">Python, ML</p>
+    </div>
+  </div>
+</section>
+
+<!-- CERTIFICATES -->
+<section id="certificates" class="section bg-light">
+  <h2 class="section-title">Certificates</h2>
+  <div class="cert-grid">
+    <div class="cert-card"><h3>Python</h3><a onclick="openPDF('certificates/python_certificate.pdf')">View</a></div>
+    <div class="cert-card"><h3>EDA</h3><a onclick="openPDF('certificates/eda_certificate.pdf')">View</a></div>
+    <div class="cert-card"><h3>SQL</h3><a onclick="openPDF('certificates/sql_certificate.pdf')">View</a></div>
+    <div class="cert-card"><h3>Power BI</h3><a onclick="openPDF('certificates/powerbi_certificate.pdf')">View</a></div>
+    <div class="cert-card"><h3>Machine Learning</h3><a onclick="openPDF('certificates/machine_learning_certificate.pdf')">View</a></div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section">
+  <h2 class="section-title">Contact Me</h2>
+
+  <form id="contact-form" class="contact-form">
+    <div class="contact-row">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+    </div>
+
+    <textarea name="message" placeholder="Your Message" required></textarea>
+
+    <button type="submit" class="btn primary">Send Message</button>
+  </form>
+</section>
+
+<footer>
+  <p>© 2026 Saurabh Shirole</p>
+</footer>
+
+<!-- PDF MODAL -->
+<div id="resumeModal" class="resume-modal">
+  <div class="resume-modal-content">
+    <span class="resume-close">&times;</span>
+    <embed id="pdfViewer" type="application/pdf">
+  </div>
+</div>
+
+<!-- EmailJS -->
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>
