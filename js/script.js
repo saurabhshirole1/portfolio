@@ -88,3 +88,50 @@ function showToast(msg, error = false) {
   setTimeout(() => t.classList.add("show"), 100);
   setTimeout(() => t.remove(), 3000);
 }
+
+// DARK MODE
+const toggleBtn = document.getElementById("theme-toggle");
+const body = document.body;
+
+if (localStorage.getItem("theme") === "dark") {
+  body.classList.add("dark");
+}
+
+toggleBtn.addEventListener("click", () => {
+  body.classList.toggle("dark");
+  localStorage.setItem("theme", body.classList.contains("dark") ? "dark" : "light");
+});
+
+/* =========================
+   SCROLL REVEAL ANIMATION
+========================= */
+
+const revealElements = document.querySelectorAll(
+  ".section, .project-card, .skill-card, .cert-card, .timeline-item"
+);
+
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("active");
+        observer.unobserve(entry.target);
+      }
+    });
+  },
+  { threshold: 0.15 }
+);
+
+revealElements.forEach(el => {
+  el.classList.add("reveal");
+  observer.observe(el);
+});
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+    document.querySelector(this.getAttribute('href'))
+      .scrollIntoView({ behavior: 'smooth' });
+  });
+});
+

@@ -12,13 +12,37 @@
 
 <body>
 
+<!-- SEO -->
+<meta name="description" content="Saurabh Shirole – Data Analyst & Data Science Enthusiast skilled in Python, SQL, EDA, Power BI, and Machine Learning.">
+<meta name="keywords" content="Data Analyst, Data Science, Python, SQL, Power BI, Machine Learning Portfolio">
+<meta name="author" content="Saurabh Shirole">
+
+<!-- Open Graph (LinkedIn / WhatsApp) -->
+<meta property="og:title" content="Saurabh Shirole | Data Analyst Portfolio">
+<meta property="og:description" content="Turning data into intelligent insights using Python, SQL, EDA & Machine Learning.">
+<meta property="og:image" content="https://yourdomain.com/images/profile.jpg">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://yourdomain.com">
+
+<button id="theme-toggle" class="theme-btn">
+  <i class="fa-solid fa-moon"></i>
+</button>
+
+
 <!-- NAVBAR -->
+ <body id="top">
+
 <header class="header">
   <div class="nav-container">
-    <h2 class="logo">Saurabh<span>.</span></h2>
+    <h2 class="logo">
+  <a href="#top">Saurabh Portfolio<span></span></a>
+</h2>
+
     <ul class="nav-links">
       <li><a href="#about">About</a></li>
       <li><a href="#skills">Skills</a></li>
+      <!-- <li><a href="#education">Education</a></li>
+      <li><a href="#internship">Internship</a></li> -->
       <li><a href="#projects">Projects</a></li>
       <li><a href="#certificates">Certificates</a></li>
       <li><a href="#contact">Contact</a></li>
@@ -62,55 +86,147 @@
 <section id="about" class="section">
   <h2 class="section-title">About Me</h2>
   <p class="about-text">
-    Data Analyst with hands-on experience in Python, SQL, EDA, Power BI, and Machine Learning.
+I am an aspiring AI/ML Engineer with strong hands-on experience in Python, SQL, Exploratory Data Analysis (EDA), and Machine Learning. I focus on designing and implementing end-to-end machine learning solutions, from data preprocessing and feature engineering to model training, evaluation, and deployment-ready workflows.
+
+I have worked on practical projects involving supervised learning, predictive modeling, and model performance optimization. I enjoy applying algorithms to real-world datasets, analyzing model behavior, and translating predictions into meaningful, data-driven outcomes.
+
+I am continuously building my expertise in machine learning, data science, and applied AI, with a strong interest in scalable models, intelligent systems, and real-world problem-solving.
   </p>
 </section>
 
 <!-- SKILLS -->
 <section id="skills" class="section bg-light">
   <h2 class="section-title">Skills</h2>
+
   <div class="skills-grid">
     <div class="skill-card"><h4>Programming</h4><p>Python, SQL</p></div>
-    <div class="skill-card"><h4>Data Analysis</h4><p>Pandas, NumPy, EDA</p></div>
-    <div class="skill-card"><h4>Visualization</h4><p>Matplotlib, Seaborn, Power BI</p></div>
-    <div class="skill-card"><h4>Machine Learning</h4><p>Regression, Classification</p></div>
+    <div class="skill-card"><h4>Libraries</h4><p> Pandas, NumPy, Matplotlib, Seaborn</p></div>
+    <div class="skill-card"><h4>Data Analysis</h4><p>Data Cleaning, EDA, Data Visualization, Dashboarding</p></div>
+    <div class="skill-card"><h4>Tools </h4><p>Power BI, Tableau, Excel, Git/GitHub</p></div>
+    <div class="skill-card"><h4>Machine Learning</h4><p>Scikit-learn, Regression, Classification, Clustering</p></div>
+    <div class="skill-card"><h4>Deep Learning</h4><p>TensorFlow, Keras</p></div>
   </div>
 </section>
+
+
+<!-- Education & Experience -->
+<section id="education" class="section">
+  <h2 class="section-title left">Education & Experience</h2>
+
+  <div class="timeline">
+
+    <!-- EDUCATION -->
+    <div class="timeline-item">
+      <div class="timeline-row">
+        <div class="timeline-icon edu">
+          <i class="fa-solid fa-graduation-cap"></i>
+        </div>
+
+        <div class="timeline-card">
+          <h3>Bachelor of Computer Science</h3>
+          <h4>Savitribai Phule Pune University</h4>
+          <span class="timeline-date">July 2022 – May 2025</span>
+          <p><strong>Grade:</strong> A</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- EXPERIENCE -->
+    <div class="timeline-item">
+      <div class="timeline-row">
+        <div class="timeline-icon exp">
+          <i class="fa-solid fa-briefcase"></i>
+        </div>
+
+        <div class="timeline-card">
+          <h3>Data Science Trainee</h3>
+          <h4>Innomatics Research Labs</h4>
+          <span class="timeline-date">Nov 2025 – Present</span>
+          <ul>
+            <li>EDA & preprocessing using Python & SQL</li>
+            <li>Built interactive Power BI dashboards</li>
+            <li>Worked on real-world business datasets</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+
 
 <!-- PROJECTS -->
 <section id="projects" class="section">
   <h2 class="section-title">Projects</h2>
 
   <div class="projects-grid">
+
     <div class="project-card">
       <div class="project-image"><img src="images/projects/odi_eda.png"></div>
-      <h3>ODI Batting EDA</h3>
-      <p class="project-tools">Python, Pandas, NumPy</p>
+      <h3>Exploratory Data Analysis of ODI Batting Statistics</h3>
+      <p>Analyzed ODI batting data to identify player performance trends and consistency.</p>
+      <p class="project-tools">Python, Pandas, NumPy, Web Scraping</p>
+      <a href="https://github.com/saurabhshirole1/eda-odi-batting-python" class="project-link">View Project</a>
     </div>
 
     <div class="project-card">
       <div class="project-image"><img src="images/projects/energy_sql.png"></div>
-      <h3>World Energy SQL</h3>
+      <h3>World Wide Energy Consumption</h3>
+      <p>SQL-based analysis of global energy usage patterns.</p>
       <p class="project-tools">SQL</p>
+      <a href="https://github.com/saurabhshirole1/energy-consumption-project-sql" class="project-link">View Project</a>
     </div>
 
     <div class="project-card">
       <div class="project-image"><img src="images/projects/churn_powerbi.png"></div>
-      <h3>Telecom Churn</h3>
+      <h3>Telecom Customer Churn Analysis</h3>
+      <p>Power BI dashboard analyzing customer churn behavior.</p>
       <p class="project-tools">Power BI</p>
+      <a href="https://github.com/saurabhshirole1/telecom-customer-churn-analysis-powerbi" class="project-link">View Project</a>
     </div>
 
-    <div class="project-card">
-      <div class="project-image"><img src="images/projects/wine_ml.png"></div>
-      <h3>Wine Quality ML</h3>
-      <p class="project-tools">Python, ML</p>
-    </div>
+<div class="project-card">
+  <div class="project-image">
+    <img src="images/projects/wine_ml.png" alt="Wine Quality Prediction">
+  </div>
+
+  <h3>Wine Quality Prediction</h3>
+
+  <p>
+    Machine learning model to classify wine quality using physicochemical
+    features and Random Forest, deployed with Streamlit.
+  </p>
+
+  <p class="project-tools">
+    Python, Scikit-learn, Streamlit
+  </p>
+
+  <div class="project-links">
+    <a href="https://github.com/saurabhshirole1/wine-quality-prediction-ml"
+       target="_blank"
+       class="project-link">
+       GitHub
+    </a>
+
+    <a href="https://wine-quality-prediction-ml.streamlit.app/"
+       target="_blank"
+       class="project-link live">
+       Live Demo
+    </a>
+  </div>
+</div>
+
+
   </div>
 </section>
 
 <!-- CERTIFICATES -->
 <section id="certificates" class="section bg-light">
   <h2 class="section-title">Certificates</h2>
+
   <div class="cert-grid">
     <div class="cert-card"><h3>Python</h3><a onclick="openPDF('certificates/python_certificate.pdf')">View</a></div>
     <div class="cert-card"><h3>EDA</h3><a onclick="openPDF('certificates/eda_certificate.pdf')">View</a></div>
@@ -129,16 +245,49 @@
       <input type="text" name="name" placeholder="Your Name" required>
       <input type="email" name="email" placeholder="Your Email" required>
     </div>
-
     <textarea name="message" placeholder="Your Message" required></textarea>
-
     <button type="submit" class="btn primary">Send Message</button>
   </form>
-</section>
 
-<footer>
-  <p>© 2026 Saurabh Shirole</p>
+</section>
+<!--Fotter -->
+<footer class="footer">
+  <div class="footer-socials">
+    <a href="mailto:saurabhshirole1@gmail.com" aria-label="Email">
+      <i class="fa-solid fa-envelope"></i>
+    </a>
+
+    <a href="https://linkedin.com/in/saurabhshirole1" target="_blank" aria-label="LinkedIn">
+      <i class="fa-brands fa-linkedin-in"></i>
+    </a>
+
+    <a href="https://github.com/saurabhshirole1" target="_blank" aria-label="GitHub">
+      <i class="fa-brands fa-github"></i>
+    </a>
+
+    <a href="https://medium.com/@saurabhshirole1" target="_blank" aria-label="Medium">
+      <i class="fa-brands fa-medium"></i>
+    </a>
+
+    <a href="https://www.instagram.com/_saurabh.shirole_" target="_blank" aria-label="Instagram">
+      <i class="fa-brands fa-instagram"></i>
+    </a>
+
+    <a href="https://www.facebook.com/share/1ANASgxuyf/" target="_blank" aria-label="Facebook">
+      <i class="fa-brands fa-facebook-f"></i>
+    </a>
+
+    <a href="https://huggingface.co/" target="_blank" aria-label="Hugging Face">
+      🤗
+    </a>
+  </div>
+
+  <p class="footer-text">
+    © 2026 <span>Saurabh Shirole</span> · Data Analyst & Data Science Enthusiast
+  </p>
 </footer>
+
+
 
 <!-- PDF MODAL -->
 <div id="resumeModal" class="resume-modal">
@@ -148,7 +297,6 @@
   </div>
 </div>
 
-<!-- EmailJS -->
 <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 <script src="js/script.js"></script>
 
